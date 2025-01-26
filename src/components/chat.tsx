@@ -9,22 +9,6 @@ const Chat = () => {
   const { isLoading, messages, input, setInput, handleSubmit } =
     useChatContext();
 
-  const content = `
-  <thinking>
-    <title>Determining the Capital of Turkey</title>
-    <content>
-      To answer the question "What is the capital of Turkey?", I need to recall or verify the current capital city of Turkey.
-    </content>
-  </thinking>
-
-  I know that Turkey is a transcontinental country located mainly on the Anatolian Peninsula in Western Asia, with a smaller portion on the Balkan Peninsula in Southeast Europe.
-
-  <citations>
-    <citation id="1" type="email" title="Citation title">This was a citation</citation>
-  </citations>
-
-  `;
-
   return (
     <>
       <div className="h-[calc(100dvh-120px)] max-w-3xl mx-auto w-full overflow-y-auto">
@@ -33,7 +17,6 @@ const Chat = () => {
             <Message key={m.id} role={m.role} content={m.content} />
           ))}
           <div className="py-20 h-20" />
-          {/* <Markdown>{content}</Markdown> */}
         </div>
       </div>
 
