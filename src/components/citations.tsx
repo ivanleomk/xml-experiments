@@ -39,7 +39,11 @@ const TypeBadge = ({ type }: { type: "event" | "email" }) => {
   );
 };
 
-const Citations = ({ citations }: Props) => {
+type CitationProps = {
+  citations: any[];
+};
+
+const Citations = ({ citations }: CitationProps) => {
   return (
     <div className="group relative grid grid-cols-3 gap-x-4 gap-y-4">
       {citations.map((item, index) => {

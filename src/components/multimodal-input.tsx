@@ -1,11 +1,10 @@
-import React, { useCallback, useEffect, useRef, useState } from "react";
+import { useCallback, useEffect, useRef, useState } from "react";
 import { Textarea } from "./ui/textarea";
-import { cn, SearchGroupId, searchGroups } from "@/lib/utils";
+import { cn, SearchGroupId } from "@/lib/utils";
 import { useLocalStorage, useWindowSize } from "usehooks-ts";
 import ResourceGroups from "./resource-groups";
 import { toast } from "@/hooks/use-toast";
 import { ArrowUp, StopCircleIcon } from "lucide-react";
-import { Button } from "./ui/button";
 
 const MultimodalInput = ({
   input,

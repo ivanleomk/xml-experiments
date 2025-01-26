@@ -1,15 +1,7 @@
 import { cn } from "@/lib/utils";
-import React from "react";
 import { Markdown } from "./markdown";
-import { Message as MessageType } from "@ai-sdk/react";
 import { motion } from "framer-motion";
-import {
-  ThumbsDown,
-  RotateCcw,
-  Copy,
-  ThumbsUp,
-  ThumbsUpIcon,
-} from "lucide-react";
+import { ThumbsDown, Copy, ThumbsUp } from "lucide-react";
 
 type Props = {
   role: "system" | "user" | "assistant" | "data";

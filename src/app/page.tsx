@@ -1,5 +1,4 @@
 import Chat from "@/components/chat";
-import Image from "next/image";
 import { ChatProvider } from "./AIProvider";
 
 export default function Home() {

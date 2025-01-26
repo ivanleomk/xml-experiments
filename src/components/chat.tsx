@@ -2,7 +2,7 @@
 import React from "react";
 import MultimodalInput from "./multimodal-input";
 import Message from "./message";
-import { Markdown } from "./markdown";
+
 import { useChatContext } from "@/app/AIProvider";
 
 const Chat = () => {
